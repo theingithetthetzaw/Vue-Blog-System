@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "title": "post title 1",
+      "id": 1,
+      "body": "lorem ispum"
+    },
+    {
+      "title": "post title 2",
+      "id": 2,
+      "body": "lorem ispum"
+    },
+    {
+      "title": "post title 1",
+      "id": 3,
+      "body": "lorem ispum"
+    },
+    {
+      "title": "post title 4",
+      "id": 4,
+      "body": "lorem ispum"
+    },
+    {
+      "title": "post title 5",
+      "id": 5,
+      "body": "lorem ispum"
+    },
+    {
+      "title": "test",
+      "body": "test",
+      "tags": [
+        "css"
+      ],
+      "id": 6
+    }
+  ]
+}
