@@ -4,8 +4,10 @@
     {{error}}
   </div>
 
-  <div v-if="posts.length>0">  
-    <PostsList :posts="posts"></PostsList>
+  <div v-if="posts.length>0" class="layout">  
+    <div><PostsList :posts="posts"></PostsList></div>
+    <div> <TagCloud></TagCloud></div>    
+   
   </div>
 
 <div v-else>
@@ -20,6 +22,7 @@
 </template>
 
 <script>
+import TagCloud from '../components/TagCloud'
 import Spinner from '../components/Spinner'
 import PostsList from '../components/PostsList'
 import getPosts from '../composables/getPosts'
@@ -29,6 +32,7 @@ import { ref } from '@vue/reactivity'
 
 export default {
   components: {
+    TagCloud,
     Spinner, PostsList },
   setup(){
    
@@ -44,8 +48,12 @@ export default {
   .home{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
-   
+    padding: 10px;   
+  }
+  .layout{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
   }
 
 </style>
